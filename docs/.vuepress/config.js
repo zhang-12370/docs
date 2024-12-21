@@ -1,4 +1,14 @@
 module.exports = {
+  description:"浩浩的博客",
+  title:"浩浩的博客",
+  head: [
+    ['mate', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['mate', { name: 'keywords', content: '浩浩的博客' }],
+    ['mate', { name: 'author', content: '浩浩' }],
+    ['mate', { name: 'description', content: '浩浩的博客' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
+  /* 侧边栏 */
   themeConfig: {
     /* 是否禁用导航 */
     // navbar: false,
