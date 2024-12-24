@@ -1,6 +1,5 @@
 module.exports = {
   description:"浩浩的博客",
-  lastUpdated:"最后更新时间",
   title:"浩浩的博客",
   head: [
     ['mate', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
@@ -11,6 +10,9 @@ module.exports = {
   ],
   /* 侧边栏 */
   themeConfig: {
+    /* git提交最后的更新时间 */
+  lastUpdated:"最后更新时间",
+
     /* 是否禁用导航 */
     // navbar: false,
     /* 图标 */
@@ -62,6 +64,7 @@ module.exports = {
       /* 单个的 */
         { text: 'Home', link: '/' },
         { text: 'about', link: '/about' },
+        { text: 'about2', link: '/about2' },
         // 多个下拉
         {
           text: 'Languages',
