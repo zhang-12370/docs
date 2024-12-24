@@ -1,5 +1,6 @@
 module.exports = {
   description:"浩浩的博客",
+  lastUpdated:"最后更新时间",
   title:"浩浩的博客",
   head: [
     ['mate', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
