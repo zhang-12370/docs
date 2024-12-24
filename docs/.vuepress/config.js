@@ -1,3 +1,5 @@
+const moment = require('moment');
+
 module.exports = {
   description:"浩浩的博客",
   title:"浩浩的博客",
@@ -7,6 +9,20 @@ module.exports = {
     ['mate', { name: 'author', content: '浩浩' }],
     ['mate', { name: 'description', content: '浩浩的博客' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
+  /* 侧边栏 */
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          moment.locale("zh-cn");
+          return moment(timestamp).format('lll');
+        }
+      }
+    ]
   ],
   /* 侧边栏 */
   themeConfig: {
